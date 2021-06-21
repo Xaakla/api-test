@@ -1,0 +1,17 @@
+header {
+  padding: 18px 32px;
+  text-align: center;
+
+  h1 {
+    color: #484848;
+  }
+}
+
+// Style to desktop
+@media(min-width: 720px) {
+  header {
+    h1 {
+      font-size: 46px;
+    }
+  }
+}

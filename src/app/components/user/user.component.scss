@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #dadada;
+  padding: 8px 16px 8px 8px;
+  border-radius: 32px;
+  -webkit-box-shadow: 5px 5px 10px 1px rgba(48,48,48,0.4);
+  box-shadow: 5px 5px 10px 1px rgba(48,48,48,0.4);
+
+  img {
+    width: 75px;
+    border-radius: 50%;
+  }
+
+  .user-data {
+    height: 100%;
+    width: 100%;
+    margin: 0 16px;
+
+    h3 {
+      color: #484848;
+    }
+
+    h5 {
+      color: #9b9b9b;
+    }
+  }
+
+  .icon {
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+
+    &:last-child {
+      color: red;
+      margin-left: 16px;
+    }
+  }
+}

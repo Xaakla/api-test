@@ -1,0 +1,11 @@
+<div class="container">
+  <div *ngFor="let user of users">
+    <app-user [user]="user" (userToAction)="handleEvents($event)"></app-user>
+  </div>
+</div>
+<app-edit-user
+  *ngIf="openEditUser"
+  [userToEdit]="userToEdit"
+  (saveUser)="updateUser($event)"
+  (cancelEdit)="openEditUser = false"
+></app-edit-user>

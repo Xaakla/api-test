@@ -1,0 +1,15 @@
+<div class="container">
+  <img [src]="user.photo" alt="user-photo" />
+
+  <div class="user-data">
+    <h3>{{ user.firstname }} {{ user.lastname }}</h3>
+    <h5>@{{ user.username }}</h5>
+  </div>
+
+  <div class="icon" (click)="emitUserAction(userActions.EDIT)">
+    <fa-icon [icon]="faEdit"></fa-icon>
+  </div>
+  <div class="icon" (click)="emitUserAction(userActions.DELETE)">
+    <fa-icon [icon]="faTrashAlt"></fa-icon>
+  </div>
+</div>

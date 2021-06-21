@@ -1,0 +1,14 @@
+<div class="container">
+  <img [src]="userToEdit.photo" alt="user-photo" />
+
+  <form class="form-edit" [formGroup]="editUserForm">
+    <input formControlName="firstname" type="text" class="user-firstname" placeholder="Firstname" />
+    <input formControlName="lastname" type="text" class="user-lastname" placeholder="Lastname" />
+    <input formControlName="username" type="text" class="user-username" placeholder="@username" />
+
+    <div class="btn-inline">
+      <input type="button" value="Cancelar" (click)="cancelEdit.emit()" />
+      <input type="button" value="Salvar" (click)="handleSaveUser()" />
+    </div>
+  </form>
+</div>
