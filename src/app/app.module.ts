@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -20,7 +19,6 @@ import { EditUserComponent } from './components/edit-user/edit-user.component';
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule,
     ReactiveFormsModule,
     HttpClientModule
   ],

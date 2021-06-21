@@ -1,5 +1,4 @@
 import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
-import { faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
 import {UserInterface} from "../../interfaces/user-interface";
 import {UserActions} from "../../interfaces/user-actions";
 
@@ -15,9 +14,6 @@ export class UserComponent implements OnInit {
 
   @Output() userToAction = new EventEmitter<{user: UserInterface, action: UserActions}>();
 
-  // Icons
-  faTrashAlt = faTrashAlt;
-  faEdit = faEdit;
 
   constructor() { }
 
